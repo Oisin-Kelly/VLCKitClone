@@ -333,7 +333,7 @@ static void HandleMediaPlayerRecord(const libvlc_event_t * event, void * self)
 {
     if (self = [self initCommon]) {
         _lastTimePoint.ts_us = -1;
-        _timeChangeUpdateInterval = 1.0;
+        _timeChangeUpdateInterval = 0.0;
         _cachedState = VLCMediaPlayerStateStopped;
         _libVLCBackgroundQueue = [self libVLCBackgroundQueue];
         _minimalWatchTimePeriod = 500000;
@@ -355,7 +355,7 @@ static void HandleMediaPlayerRecord(const libvlc_event_t * event, void * self)
 {
     if (self = [self initCommon]) {
         _lastTimePoint.ts_us = -1;
-        _timeChangeUpdateInterval = 1.0;
+        _timeChangeUpdateInterval = 0.0;
         _cachedState = VLCMediaPlayerStateStopped;
         _libVLCBackgroundQueue = [self libVLCBackgroundQueue];
 
@@ -1304,7 +1304,7 @@ static void HandleMediaPlayerRecord(const libvlc_event_t * event, void * self)
 {
     if (self = [self initCommon]) {
         _lastTimePoint.ts_us = -1;
-        _timeChangeUpdateInterval = 1.0;
+        _timeChangeUpdateInterval = 0.0;
         _cachedState = VLCMediaPlayerStateStopped;
         _libVLCBackgroundQueue = [self libVLCBackgroundQueue];
 
